@@ -83,7 +83,7 @@ function App() {
 
   return <main className="deck">
     <header className="masthead">
-      <div className="identity"><a className="backToPortal" href="/">← TESES</a><img className="verossLogo light" src="https://www.veross.com.br/img/logos/logo-veross.svg" alt="Veross"/><p>CAPITAL INTELIGENTE<small>HOLOFOTE NO INVESTIDOR</small></p></div>
+      <div className="identity"><a className="backToPortal" href="/">← TESES</a><img className="verossLogo light" src="https://www.veross.com.br/img/logos/logo-veross.svg" alt="Veross"/><p>CAPITAL INTELIGENTE</p></div>
       <div className="author">LUCAS SILVESTRE / 2026<button onClick={() => document.documentElement.requestFullscreen?.()} aria-label="Abrir em tela cheia"><Expand size={14}/></button></div>
     </header>
     <aside className="rail" aria-label="Progresso da apresentação"><i style={{ height: `${((active + 1) / slides.length) * 100}%` }}/></aside>
