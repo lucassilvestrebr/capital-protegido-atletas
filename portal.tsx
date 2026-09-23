@@ -13,6 +13,7 @@ const theses = [
     href: '/tese-original.html',
     icon: Layers3,
     tone: 'athlete',
+    image: 'https://res.cloudinary.com/dofv1fbu6/image/upload/dae7301e82d42df3637a17fa91baa477_lmidsd.jpg',
   },
   {
     number: '02',
@@ -22,6 +23,7 @@ const theses = [
     href: '/capital-inteligente.html',
     icon: Building2,
     tone: 'investor',
+    image: 'https://res.cloudinary.com/dofv1fbu6/image/upload/04e5becb141a8eb022938a4b98f47036_pz3hg8.jpg',
   },
 ]
 
@@ -40,6 +42,7 @@ function Portal() {
       {theses.map((thesis, index) => {
         const Icon = thesis.icon
         return <motion.a className={`thesisCard ${thesis.tone}`} href={thesis.href} key={thesis.number} initial={{ opacity: 0, y: 22 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .6, delay: .12 + index * .1 }}>
+          <div className="cardImage" style={{ backgroundImage: `url(${thesis.image})` }} aria-hidden="true" />
           <div className="footballMark" aria-hidden="true"><i/><i/><b>●</b><b>●</b><b>●</b></div>
           <div className="cardTop"><span>{thesis.number}</span><Icon size={21}/></div>
           <div className="cardCopy"><h2>{thesis.title}</h2><p>{thesis.description}</p></div>
